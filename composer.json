@@ -1,0 +1,38 @@
+{
+  "config": {
+    "preferred-install": "dist",
+    "secure-http" : false
+  },
+  "autoload": {
+    "psr-0": { "": "src/" }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://toran.server.traveljigsaw.com/repo/private/",
+      "options": {
+        "http": {
+          "proxy": ""
+        }
+      }
+    },
+    {
+      "type": "composer",
+      "url": "http://toran.server.traveljigsaw.com/repo/packagist/",
+      "options": {
+        "http": {
+          "proxy": ""
+        }
+      }
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "require": {
+    "guzzle/guzzle": "v3.9.2"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.0"
+  }
+}
